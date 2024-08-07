@@ -1,0 +1,111 @@
+@font-face {
+    font-family:' JosefinSans-EL';
+    src: url(../../assets/Josefin_Sans/static//JosefinSans-ExtraLight.ttf);
+}
+@font-face {
+    font-family:' JosefinSans-SB' ;
+    src: url(../../assets/Josefin_Sans/static/JosefinSans-SemiBold.ttf);
+}
+
+#info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#firstpart{
+    color:hsl(0, 41%, 61%);
+    font-family:' JosefinSans-EL';
+   
+}
+#logo{
+    margin-right: 250px;
+    margin-bottom: 60px;
+}
+h1{
+   width: 50%;
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family:' JosefinSans-SB' ;
+    margin: 20px;
+
+}
+p{
+    width: 50%;
+    height: 70px;
+    font-size: 18px;
+    color:hsl(0, 39%, 50%,45%);
+    font-family:' JosefinSans-SB' ;
+}
+input{
+    width:400px;
+    height: 50px;
+    border: 1px solid  hsla(0, 43%, 71%, 0.7);
+    border-radius: 30px;
+   
+}
+#btn{
+    width: 300px;
+    height: 120px;
+    margin-right: 170px;
+}
+button{
+    width: 80px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background: rgb(242,224,224);
+    background: linear-gradient(90deg, rgba(242,224,224,1) 0%, rgba(238,156,151,1) 55%, rgba(232,124,124,0.8827906162464986) 92%);
+   position: relative;
+   bottom: -52px;
+   left: 323px;
+   cursor: pointer;
+}
+input::placeholder{
+    padding-left: 10px;
+    font-family:' JosefinSans-SB' ;
+    color: rgb(168, 167, 167);
+}
+
+@media only screen and (max-width:375px){
+    #info{
+        width: 350px;
+        height: 320px;
+        row-gap: 10px;
+        text-align: center;
+    }
+    p{
+        width: 300px;
+        font-size: 15px;
+        margin: 0;
+    }
+    h1{
+        width: 300px;
+        font-size: 40px;
+       margin: 0;
+    }
+    input{
+        width: 300px;
+    }
+    button{
+        left: 112px;
+       top: 52px;
+       padding: 0;
+       margin: 0;
+    }
+    #logo{
+        margin: 0;
+        position: absolute;
+       top: 20px;
+       left: 10px;
+    }
+    #btn{
+        width: 300px;
+        height: 120px;
+        margin: 0;
+    }
+}
